@@ -46,6 +46,11 @@ class Url(object):
             domain = '.'.join(parts[-2:])
         return domain
 
+shell example ：
+        echo "http://www.baidu.com:80/ABCD/a.txt" | awk -F'[/:]' '{print $4}'
+        # 输出：www.baidu.com
+
+
 def readFile(File):
     data = {}
     with open(File, 'r') as fp:
