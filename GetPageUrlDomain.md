@@ -7,7 +7,7 @@ import sys
 import urllib                                                                                                                       
 from urlparse import urlparse
 
-tldFile = './tld.dat'
+tldFile = 'data/tld.dat'
 
 def singleton(cls, *args, **kw):
     instances = {}
